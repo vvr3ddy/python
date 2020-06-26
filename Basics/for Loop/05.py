@@ -9,3 +9,8 @@ res = [int(i) for i in str(num)] #convert to a list
 print(res)
 check = int(input("Enter the number u want to check the occurence frequency:"))
 print("Frequency of {} is {}".format(check, res.count(check)))
+sum = 0
+for i in res:
+    sum = sum + i
+
+print("Sum of all digits present in the number : {}".format(sum))
